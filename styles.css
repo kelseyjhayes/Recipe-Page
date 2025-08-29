@@ -164,7 +164,7 @@ body {
   }
 }
 
-section h1, section h2 {
+article h1, section h2 {
   margin-bottom:1.5rem;
   color:var(--brown);
 }
