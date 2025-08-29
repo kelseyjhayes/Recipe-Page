@@ -113,14 +113,41 @@ hr {
   border:none;
 }
 
+body {
+  background-color: var(--stone-100);
+}
+
 .card {
+  background-color: var(--white);
+  margin:0 auto;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
 }
 
+@media screen and (min-width:767px) {
+  .card {
+    width:616px;
+    margin-top:128px;
+    border-radius:24px;
+    padding:2.5rem 2.5rem 0;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .card {
+    width:736px;
+  }
+}
+
 .recipe-photo {
   width:100%;
+}
+
+@media screen and (min-width:767px) {
+  .recipe-photo {
+  border-radius:12px;
+  }
 }
 
 .content {
@@ -131,8 +158,14 @@ hr {
   gap:2rem;
 }
 
+@media screen and (min-width:767px) {
+  .content {
+    margin: 2.5rem 0;
+  }
+}
+
 section h1, section h2 {
-  margin-bottom:2rem;
+  margin-bottom:1.5rem;
   color:var(--brown);
 }
 
@@ -165,7 +198,7 @@ section h1, section h2 {
 }
 */
 .nutrition-description {
-  margin-bottom:24px;
+  margin-bottom:1.5rem;
 }
 
 .nutrition-table {
@@ -180,8 +213,8 @@ section h1, section h2 {
 .nutrition-table td {
   border-bottom:1px solid var(--stone-150);
   border-collapse:collapse;
-  padding-top:12px;
-  padding-bottom:12px;
+  padding-top:0.75rem;
+  padding-bottom:0.75rem;
 }
 
 .nutrition-table tr:last-child td {
@@ -189,19 +222,10 @@ section h1, section h2 {
 }
 
 .nutrition-table td:first-child {
-  padding-left:32px;
+  padding-left:2rem;
 }
 
 .nutrition-table td:last-child {
-  padding-left:16px;
+  padding-left:1rem;
   color: var(--brown);
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
