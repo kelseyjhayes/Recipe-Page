@@ -191,12 +191,7 @@ section h1, section h2 {
 .ingredients-container li::marker {
   color:var(--brown);
 }
-/*
-.instructions-container li::marker {
-  font-weight:600;
-  color:var(--brown);
-}
-*/
+
 .nutrition-description {
   margin-bottom:1.5rem;
 }
