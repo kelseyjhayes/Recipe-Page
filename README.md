@@ -18,8 +18,8 @@
 
 ### Links
 
-- [Solution:](https://github.com/kelseyjhayes/Recipe-Page)
-- [Live Site:](https://kelseyjhayes.github.io/Recipe-Page/)
+- [Solution](https://github.com/kelseyjhayes/Recipe-Page)
+- [Live Site](https://kelseyjhayes.github.io/Recipe-Page/)
 
 ## My process
 
