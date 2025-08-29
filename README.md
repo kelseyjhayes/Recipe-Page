@@ -67,4 +67,6 @@ ol li::before {
 
 ### Continued development
 
+I'd like to continue improving on my selector knowledge, as I stll do a lot of trial and error rather than knowing exactly what selectors to use for more complex use cases (e.g. multiple pseudo-classes). 
+
 I'd like to get a better understanding of how fonts render different across browsers. I've found my design looks as it should in Chrome, but font weights are thicker in Safari which I feel impacts readability in certain areas. 
