@@ -32,7 +32,7 @@ html {
 
 .text-preset-1 {
   font-family: Young Serif, serif;
-  font-size:2.5rem;
+  font-size:2.25rem;
   line-height:100%;
 }
 
@@ -60,13 +60,57 @@ html {
   line-height:150%;
 }
 
-li {
-  margin-inline-start:1.5rem;
+@media screen (min-width:767px) {
+.text-preset-1 {
+  font-size:2.5rem;
+}
+}
+
+ol {
+  list-style:none;
+  counter-reset:step;
+  padding-inline-start:0;
+}
+
+ol li {
+  counter-increment:step;
+  position:relative;
+  padding-inline-start: 2.5rem;
+  margin-bottom:0.5rem;
+}
+
+ol li:last-of-type {
+  margin-bottom:0;
+}
+
+ol li::before {
+  content: counter(step) ".";
+  position:absolute;
+  left:0.25rem;
+  font-weight:bold;
+  color:var(--brown);
+  width:1rem;
+  text-align:right;
+}
+
+ul li {
+margin-inline-start:1.5rem;
+margin-bottom:0.5rem;
+}
+
+ul li:last-of-type {
+  margin-bottom:0;
 }
 
 .indent {
   position:relative;
   left:1rem;
+}
+
+hr {
+  height:1px;
+  background-color:var(--stone-150);
+  border:none;
 }
 
 .card {
@@ -114,10 +158,43 @@ section h1, section h2 {
 .ingredients-container li::marker {
   color:var(--brown);
 }
-
+/*
 .instructions-container li::marker {
   font-weight:600;
   color:var(--brown);
+}
+*/
+.nutrition-description {
+  margin-bottom:24px;
+}
+
+.nutrition-table {
+  width:100%;
+  border-spacing:0;
+}
+
+.nutrition-table th:first-of-type {
+  width:50%;
+}
+
+.nutrition-table td {
+  border-bottom:1px solid var(--stone-150);
+  border-collapse:collapse;
+  padding-top:12px;
+  padding-bottom:12px;
+}
+
+.nutrition-table tr:last-child td {
+  border:none;
+}
+
+.nutrition-table td:first-child {
+  padding-left:32px;
+}
+
+.nutrition-table td:last-child {
+  padding-left:16px;
+  color: var(--brown);
 }
 
 .attribution {
